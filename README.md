@@ -1,5 +1,17 @@
 # Science Hack Day 2018
 
-Participant badge for Science Hack Day 2018
+Participant badge for Science Hack Day Vilnius 2018
+
+## Prerequisites
+
+To use the badge, you will need the following:
+
+ * A laptop with Linux, Mac OS or Windows and at least one free USB port.
+ * If it’s Windows or Mac OS, make sure to install [drivers](https://wiki.wemos.cc/downloads) for the CH340 UBS2TTL chip.
+ * A micro-USB cable with data lines that fits your USB port.
+ * You will need a terminal application installed. For Linux and Mac you can use screen, which is installed by default. For Windows we recommend [PuTTy](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [CoolTerm](http://freeware.the-meiers.org/).
+ * Please note that the workshop will be in English.
+
+## Schematics
 
 ![](shd18-badge.svg)
