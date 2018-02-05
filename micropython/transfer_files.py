@@ -31,9 +31,10 @@ class EspSerial(serial.Serial):
         self.write(ctrl('c'))
         self.command(ctrl('d'), 1.5)
         self.command()
-        assert self.command().endswith('>>> '), 'Bad reset!'
+        assert not self.command().endswith('>>> '), 'Bad reset!'
 
     def prepare_transfer(self):
+        self.write(ctrl('c'))
         self.command('import ubinascii')
         self.write(ctrl('e'))
         self.write('def w(d):\n')
