@@ -1,11 +1,12 @@
 from machine import Pin, SPI, ADC
 from neopixel import NeoPixel
 from time import sleep
+import thermistor
 
 pixel = NeoPixel(Pin(5, Pin.OUT), 1)
 spi = SPI(1, baudrate=1000000, polarity=0, phase=0)
 cs=Pin(15, Pin.OUT)
-thermistor = ADC(0)
+thermistorAdc = ADC(0)
 
 def setPixel(r, g, b):
 	pixel[0] = (r, g, b)
@@ -16,8 +17,11 @@ def setLeds(b):
 	spi.write(bytearray([b]))
 	cs.on();
 
+def getTemperature():
+	return thermistor.lsbToTemperature(thermistorAdc.read())
+
 while True:
-	# print(thermistor.read())
+	print(getTemperature())
 	setLeds(0x55)
 	setPixel(4, 0, 0)
 	sleep(0.2)
