@@ -15,3 +15,14 @@ To use the badge, you will need the following:
 ## Schematics
 
 ![](shd18-badge.svg)
+
+## Programming
+
+Use dmesg to determine the USB port the badge is connected to, e.g. /dev/ttyUSB0.
+
+Flash the firmware:
+cd shd18badge/micropython
+
+Edit the flash_microcontroller.sh file so that it points to the correct USB port. If esptool.py is needed, install it (for example, pip install esptool.py). Then copy the Python files to the microcontroller:
+
+python transfer_files.py -p <USB device> util.py main.py thermistor.py boot.py
