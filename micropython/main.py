@@ -55,12 +55,12 @@ def flash(color):
 		setPixel(r, g, b)
 		sleep(0.01)
 
-# setPixel(0, 0, 0)
-# wiggleFeet()
-# flash(None)
-# cycleFeet()
-# cycleFeet()
-# cycleFeet()
+setPixel(0, 0, 0)
+wiggleFeet()
+flash(None)
+cycleFeet()
+cycleFeet()
+cycleFeet()
 
 
 temp = getTemperature()
