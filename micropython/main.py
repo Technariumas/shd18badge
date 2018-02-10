@@ -73,10 +73,10 @@ while True:
 	print(getTemperature())
 
 	if MODE1 == mode:
-		if abs(getTemperature() - temp) > 2:
-			temp = getTemperature()
+		if abs(getTemperature() - temp) > 1:
 			flash(int(util.translate(temp, 5, 30, 0, 255)))
 			sleep(0.1)
+			temp = getTemperature()
 		setLeds(urandom.getrandbits(8))
 		sleep(0.01)
 	elif MODE2 == mode:

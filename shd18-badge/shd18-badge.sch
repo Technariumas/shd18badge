@@ -1,0 +1,713 @@
+EESchema Schematic File Version 4
+LIBS:shd18-badge-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Science Hack Day 2018 badge"
+Date "2018-01-10"
+Rev "1"
+Comp "Technarium"
+Comment1 "Albertas Mickenas"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wemos_mini:WeMos_mini U1
+U 1 1 5A6578FF
+P 4950 3200
+F 0 "U1" H 4950 3837 60  0000 C CNN
+F 1 "WeMos_mini" H 4950 3731 60  0000 C CNN
+F 2 "wemos:D1_mini_board" H 4950 3837 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 4950 3731 60  0001 C CNN
+F 4 "?" H 4950 3200 50  0001 C CNN "PartNo"
+F 5 "?" H 4950 3200 50  0001 C CNN "Manufacturer"
+F 6 "?" H 4950 3200 50  0001 C CNN "Distributor"
+	1    4950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_74xx:74HC595 U2
+U 1 1 5A657BCE
+P 7100 3450
+F 0 "U2" H 7250 4200 50  0000 C CNN
+F 1 "74HC595" H 7300 4100 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 7100 3450 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 7100 3450 50  0001 C CNN
+F 4 "?" H 7100 3450 50  0001 C CNN "PartNo"
+F 5 "?" H 7100 3450 50  0001 C CNN "Manufacturer"
+F 6 "?" H 7100 3450 50  0001 C CNN "Distributor"
+	1    7100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5A657C91
+P 7100 2200
+F 0 "#PWR01" H 7100 2050 50  0001 C CNN
+F 1 "VCC" H 7117 2373 50  0000 C CNN
+F 2 "" H 7100 2200 50  0001 C CNN
+F 3 "" H 7100 2200 50  0001 C CNN
+	1    7100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2750 6450 2750
+Wire Wire Line
+	6450 2750 6450 3350
+Wire Wire Line
+	6450 3350 6600 3350
+Wire Wire Line
+	6600 4250 7100 4250
+$Comp
+L power:GND #PWR02
+U 1 1 5A657D50
+P 7100 4250
+F 0 "#PWR02" H 7100 4000 50  0001 C CNN
+F 1 "GND" H 7105 4077 50  0000 C CNN
+F 2 "" H 7100 4250 50  0001 C CNN
+F 3 "" H 7100 4250 50  0001 C CNN
+	1    7100 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 4250
+Wire Wire Line
+	5450 2950 6350 2950
+$Comp
+L device:Thermistor TH1
+U 1 1 5A658019
+P 6250 5200
+F 0 "TH1" H 6355 5246 50  0000 L CNN
+F 1 "Thermistor" H 6355 5155 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 6250 5200 50  0001 C CNN
+F 3 "" H 6250 5200 50  0001 C CNN
+F 4 "?" H 6250 5200 50  0001 C CNN "PartNo"
+F 5 "?" H 6250 5200 50  0001 C CNN "Manufacturer"
+F 6 "?" H 6250 5200 50  0001 C CNN "Distributor"
+	1    6250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5A6580A3
+P 6250 4850
+F 0 "R1" H 6320 4896 50  0000 L CNN
+F 1 "R" H 6320 4805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6180 4850 50  0001 C CNN
+F 3 "" H 6250 4850 50  0001 C CNN
+F 4 "?" H 6250 4850 50  0001 C CNN "PartNo"
+F 5 "?" H 6250 4850 50  0001 C CNN "Manufacturer"
+F 6 "?" H 6250 4850 50  0001 C CNN "Distributor"
+	1    6250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5A6581A2
+P 5450 2700
+F 0 "#PWR03" H 5450 2550 50  0001 C CNN
+F 1 "+3V3" H 5465 2873 50  0000 C CNN
+F 2 "" H 5450 2700 50  0001 C CNN
+F 3 "" H 5450 2700 50  0001 C CNN
+	1    5450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2700 5450 2850
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5A6583AF
+P 6250 4700
+F 0 "#PWR04" H 6250 4550 50  0001 C CNN
+F 1 "+3V3" H 6265 4873 50  0000 C CNN
+F 2 "" H 6250 4700 50  0001 C CNN
+F 3 "" H 6250 4700 50  0001 C CNN
+	1    6250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5A6583DE
+P 6250 5400
+F 0 "#PWR05" H 6250 5150 50  0001 C CNN
+F 1 "GND" H 6255 5227 50  0000 C CNN
+F 2 "" H 6250 5400 50  0001 C CNN
+F 3 "" H 6250 5400 50  0001 C CNN
+	1    6250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5000 5800 5000
+Wire Wire Line
+	5800 5000 5800 3450
+Wire Wire Line
+	5800 3450 5450 3450
+Connection ~ 6250 5000
+$Comp
+L power:GND #PWR06
+U 1 1 5A6588BC
+P 3450 2950
+F 0 "#PWR06" H 3450 2700 50  0001 C CNN
+F 1 "GND" H 3455 2777 50  0000 C CNN
+F 2 "" H 3450 2950 50  0001 C CNN
+F 3 "" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2950 4450 2950
+$Comp
+L device:Battery BT1
+U 1 1 5A658BFF
+P 2200 2900
+F 0 "BT1" H 2308 2946 50  0000 L CNN
+F 1 "Battery" H 2308 2855 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_2479_3xAAA" V 2200 2960 50  0001 C CNN
+F 3 "~" V 2200 2960 50  0001 C CNN
+F 4 "?" H 2200 2900 50  0001 C CNN "PartNo"
+F 5 "?" H 2200 2900 50  0001 C CNN "Manufacturer"
+F 6 "?" H 2200 2900 50  0001 C CNN "Distributor"
+	1    2200 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5A65900D
+P 2200 3100
+F 0 "#PWR07" H 2200 2850 50  0001 C CNN
+F 1 "GND" H 2205 2927 50  0000 C CNN
+F 2 "" H 2200 3100 50  0001 C CNN
+F 3 "" H 2200 3100 50  0001 C CNN
+	1    2200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5A6590CC
+P 3250 2600
+F 0 "#PWR08" H 3250 2450 50  0001 C CNN
+F 1 "VCC" H 3267 2773 50  0000 C CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2600 4450 2850
+$Comp
+L device:LED D1
+U 1 1 5A6597F8
+P 9000 4150
+F 0 "D1" H 9000 4050 50  0000 C CNN
+F 1 "LED" H 8992 3986 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 4150 50  0001 C CNN
+F 3 "~" H 9000 4150 50  0001 C CNN
+F 4 "?" H 9000 4150 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 4150 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 4150 50  0001 C CNN "Distributor"
+	1    9000 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5A65A846
+P 9150 2550
+F 0 "#PWR09" H 9150 2300 50  0001 C CNN
+F 1 "GND" H 9155 2377 50  0000 C CNN
+F 2 "" H 9150 2550 50  0001 C CNN
+F 3 "" H 9150 2550 50  0001 C CNN
+	1    9150 2550
+	1    0    0    1   
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5A65BEED
+P 8700 2750
+F 0 "R2" V 8600 2750 50  0000 C CNN
+F 1 "1k" V 8700 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 2750 50  0001 C CNN
+F 3 "" H 8700 2750 50  0001 C CNN
+F 4 "?" H 8700 2750 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 2750 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 2750 50  0001 C CNN "Distributor"
+	1    8700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5A65C909
+P 8700 2950
+F 0 "R3" V 8600 2950 50  0000 C CNN
+F 1 "1k" V 8700 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 2950 50  0001 C CNN
+F 3 "" H 8700 2950 50  0001 C CNN
+F 4 "?" H 8700 2950 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 2950 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 2950 50  0001 C CNN "Distributor"
+	1    8700 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R4
+U 1 1 5A65CA11
+P 8700 3150
+F 0 "R4" V 8600 3150 50  0000 C CNN
+F 1 "1k" V 8700 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 3150 50  0001 C CNN
+F 3 "" H 8700 3150 50  0001 C CNN
+F 4 "?" H 8700 3150 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 3150 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 3150 50  0001 C CNN "Distributor"
+	1    8700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R5
+U 1 1 5A65CA1A
+P 8700 3350
+F 0 "R5" V 8600 3350 50  0000 C CNN
+F 1 "1k" V 8700 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 3350 50  0001 C CNN
+F 3 "" H 8700 3350 50  0001 C CNN
+F 4 "?" H 8700 3350 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 3350 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 3350 50  0001 C CNN "Distributor"
+	1    8700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R6
+U 1 1 5A65CE4C
+P 8700 3550
+F 0 "R6" V 8600 3550 50  0000 C CNN
+F 1 "1k" V 8700 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 3550 50  0001 C CNN
+F 3 "" H 8700 3550 50  0001 C CNN
+F 4 "?" H 8700 3550 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 3550 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 3550 50  0001 C CNN "Distributor"
+	1    8700 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R7
+U 1 1 5A65CE55
+P 8700 3750
+F 0 "R7" V 8600 3750 50  0000 C CNN
+F 1 "1k" V 8700 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 3750 50  0001 C CNN
+F 3 "" H 8700 3750 50  0001 C CNN
+F 4 "?" H 8700 3750 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 3750 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 3750 50  0001 C CNN "Distributor"
+	1    8700 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R8
+U 1 1 5A65CE5E
+P 8700 3950
+F 0 "R8" V 8600 3950 50  0000 C CNN
+F 1 "1k" V 8700 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 3950 50  0001 C CNN
+F 3 "" H 8700 3950 50  0001 C CNN
+F 4 "?" H 8700 3950 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 3950 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 3950 50  0001 C CNN "Distributor"
+	1    8700 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R9
+U 1 1 5A65CE67
+P 8700 4150
+F 0 "R9" V 8600 4150 50  0000 C CNN
+F 1 "1k" V 8700 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8630 4150 50  0001 C CNN
+F 3 "" H 8700 4150 50  0001 C CNN
+F 4 "?" H 8700 4150 50  0001 C CNN "PartNo"
+F 5 "?" H 8700 4150 50  0001 C CNN "Manufacturer"
+F 6 "?" H 8700 4150 50  0001 C CNN "Distributor"
+	1    8700 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 3050 7800 3050
+Wire Wire Line
+	7800 3050 7800 2750
+Wire Wire Line
+	7800 2750 8550 2750
+Wire Wire Line
+	7600 3150 7950 3150
+Wire Wire Line
+	7950 3150 7950 2950
+Wire Wire Line
+	7950 2950 8550 2950
+Wire Wire Line
+	7600 3250 8100 3250
+Wire Wire Line
+	8100 3250 8100 3150
+Wire Wire Line
+	8100 3150 8550 3150
+Wire Wire Line
+	7600 3350 8550 3350
+Wire Wire Line
+	7600 3450 8100 3450
+Wire Wire Line
+	8100 3450 8100 3550
+Wire Wire Line
+	8100 3550 8550 3550
+Wire Wire Line
+	7600 3550 7900 3550
+Wire Wire Line
+	7900 3550 7900 3750
+Wire Wire Line
+	7900 3750 8550 3750
+Wire Wire Line
+	7600 3650 7800 3650
+Wire Wire Line
+	7800 3650 7800 3950
+Wire Wire Line
+	7800 3950 8550 3950
+Wire Wire Line
+	7600 3750 7700 3750
+Wire Wire Line
+	7700 3750 7700 4150
+Wire Wire Line
+	7700 4150 8550 4150
+$Comp
+L device:C C2
+U 1 1 5A6618B7
+P 6650 2350
+F 0 "C2" H 6765 2396 50  0000 L CNN
+F 1 "1u" H 6765 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6688 2200 50  0001 C CNN
+F 3 "" H 6650 2350 50  0001 C CNN
+F 4 "?" H 6650 2350 50  0001 C CNN "PartNo"
+F 5 "?" H 6650 2350 50  0001 C CNN "Manufacturer"
+F 6 "?" H 6650 2350 50  0001 C CNN "Distributor"
+	1    6650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5A6619B5
+P 6650 2500
+F 0 "#PWR010" H 6650 2250 50  0001 C CNN
+F 1 "GND" H 6655 2327 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2200 7100 2200
+Wire Wire Line
+	7100 2200 7100 2750
+Connection ~ 7100 2200
+Connection ~ 7100 2750
+$Comp
+L device:C C1
+U 1 1 5A66308A
+P 3950 4900
+F 0 "C1" H 4065 4946 50  0000 L CNN
+F 1 "1u" H 4065 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3988 4750 50  0001 C CNN
+F 3 "" H 3950 4900 50  0001 C CNN
+F 4 "?" H 3950 4900 50  0001 C CNN "PartNo"
+F 5 "?" H 3950 4900 50  0001 C CNN "Manufacturer"
+F 6 "?" H 3950 4900 50  0001 C CNN "Distributor"
+	1    3950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED1
+U 1 1 5A664E2F
+P 4950 5250
+F 0 "LED1" H 4950 5475 50  0000 C CNN
+F 1 "WS2812B" H 4950 5384 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 4950 4950 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 4950 5200 50  0001 C CNN
+F 4 "?" H 4950 5250 50  0001 C CNN "PartNo"
+F 5 "?" H 4950 5250 50  0001 C CNN "Manufacturer"
+F 6 "?" H 4950 5250 50  0001 C CNN "Distributor"
+	1    4950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5A664E77
+P 5350 5350
+F 0 "#PWR011" H 5350 5100 50  0001 C CNN
+F 1 "GND" H 5355 5177 50  0000 C CNN
+F 2 "" H 5350 5350 50  0001 C CNN
+F 3 "" H 5350 5350 50  0001 C CNN
+	1    5350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR012
+U 1 1 5A66510A
+P 4550 4750
+F 0 "#PWR012" H 4550 4600 50  0001 C CNN
+F 1 "VCC" H 4567 4923 50  0000 C CNN
+F 2 "" H 4550 4750 50  0001 C CNN
+F 3 "" H 4550 4750 50  0001 C CNN
+	1    4550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5A665455
+P 3950 5050
+F 0 "#PWR013" H 3950 4800 50  0001 C CNN
+F 1 "GND" H 3955 4877 50  0000 C CNN
+F 2 "" H 3950 5050 50  0001 C CNN
+F 3 "" H 3950 5050 50  0001 C CNN
+	1    3950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4750 4550 4750
+Wire Wire Line
+	4550 4750 4550 5250
+Connection ~ 4550 4750
+Wire Wire Line
+	4450 3350 3700 3350
+Wire Wire Line
+	3700 3350 3700 5350
+Wire Wire Line
+	3700 5350 4550 5350
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5A669F18
+P 3050 3250
+F 0 "SW2" H 3050 3535 50  0000 C CNN
+F 1 "SW_Push" H 3050 3444 50  0000 C CNN
+F 2 "wemos:4P-SMD-6.2X6.2X4H" H 3050 3450 50  0001 C CNN
+F 3 "" H 3050 3450 50  0001 C CNN
+F 4 "?" H 3050 3250 50  0001 C CNN "PartNo"
+F 5 "?" H 3050 3250 50  0001 C CNN "Manufacturer"
+F 6 "?" H 3050 3250 50  0001 C CNN "Distributor"
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5A66AE43
+P 2850 3250
+F 0 "#PWR014" H 2850 3000 50  0001 C CNN
+F 1 "GND" H 2855 3077 50  0000 C CNN
+F 2 "" H 2850 3250 50  0001 C CNN
+F 3 "" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3250 3250 3250
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5A66DDAE
+P 2600 2700
+F 0 "SW1" H 2600 2375 50  0000 C CNN
+F 1 "SW_SPDT" H 2600 2466 50  0000 C CNN
+F 2 "wemos:SWITCH-SPST-SMD-A" H 2600 2700 50  0001 C CNN
+F 3 "" H 2600 2700 50  0001 C CNN
+F 4 "?" H 2600 2700 50  0001 C CNN "PartNo"
+F 5 "?" H 2600 2700 50  0001 C CNN "Manufacturer"
+F 6 "?" H 2600 2700 50  0001 C CNN "Distributor"
+	1    2600 2700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2700 2400 2700
+Wire Wire Line
+	2800 2600 3250 2600
+Connection ~ 3250 2600
+Wire Wire Line
+	3250 2600 4450 2600
+Wire Wire Line
+	5450 3050 6600 3050
+Wire Wire Line
+	5450 3250 6600 3250
+Wire Wire Line
+	6350 3550 6600 3550
+Wire Wire Line
+	6350 2950 6350 3550
+$Comp
+L device:LED D2
+U 1 1 5A67C098
+P 9000 3950
+F 0 "D2" H 9000 3850 50  0000 C CNN
+F 1 "LED" H 8992 3786 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 3950 50  0001 C CNN
+F 3 "~" H 9000 3950 50  0001 C CNN
+F 4 "?" H 9000 3950 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 3950 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 3950 50  0001 C CNN "Distributor"
+	1    9000 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:LED D3
+U 1 1 5A67C1C8
+P 9000 3750
+F 0 "D3" H 9000 3650 50  0000 C CNN
+F 1 "LED" H 8992 3586 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 3750 50  0001 C CNN
+F 3 "~" H 9000 3750 50  0001 C CNN
+F 4 "?" H 9000 3750 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 3750 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 3750 50  0001 C CNN "Distributor"
+	1    9000 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:LED D4
+U 1 1 5A67C1D1
+P 9000 3550
+F 0 "D4" H 9000 3450 50  0000 C CNN
+F 1 "LED" H 8992 3386 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 3550 50  0001 C CNN
+F 3 "~" H 9000 3550 50  0001 C CNN
+F 4 "?" H 9000 3550 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 3550 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 3550 50  0001 C CNN "Distributor"
+	1    9000 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4150 9150 3950
+$Comp
+L device:LED D5
+U 1 1 5A67D00E
+P 9000 3350
+F 0 "D5" H 9000 3250 50  0000 C CNN
+F 1 "LED" H 8992 3186 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 3350 50  0001 C CNN
+F 3 "~" H 9000 3350 50  0001 C CNN
+F 4 "?" H 9000 3350 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 3350 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 3350 50  0001 C CNN "Distributor"
+	1    9000 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:LED D6
+U 1 1 5A67D017
+P 9000 3150
+F 0 "D6" H 9000 3050 50  0000 C CNN
+F 1 "LED" H 8992 2986 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 3150 50  0001 C CNN
+F 3 "~" H 9000 3150 50  0001 C CNN
+F 4 "?" H 9000 3150 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 3150 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 3150 50  0001 C CNN "Distributor"
+	1    9000 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:LED D7
+U 1 1 5A67D020
+P 9000 2950
+F 0 "D7" H 9000 2850 50  0000 C CNN
+F 1 "LED" H 8992 2786 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 2950 50  0001 C CNN
+F 3 "~" H 9000 2950 50  0001 C CNN
+F 4 "?" H 9000 2950 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 2950 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 2950 50  0001 C CNN "Distributor"
+	1    9000 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:LED D8
+U 1 1 5A67D029
+P 9000 2750
+F 0 "D8" H 9000 2650 50  0000 C CNN
+F 1 "LED" H 8992 2586 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 9000 2750 50  0001 C CNN
+F 3 "~" H 9000 2750 50  0001 C CNN
+F 4 "?" H 9000 2750 50  0001 C CNN "PartNo"
+F 5 "?" H 9000 2750 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9000 2750 50  0001 C CNN "Distributor"
+	1    9000 2750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9150 3950
+Wire Wire Line
+	9150 3950 9150 3750
+Connection ~ 9150 3750
+Wire Wire Line
+	9150 3750 9150 3550
+Connection ~ 9150 3550
+Wire Wire Line
+	9150 3550 9150 3350
+Connection ~ 9150 3350
+Wire Wire Line
+	9150 3350 9150 3150
+Connection ~ 9150 3150
+Wire Wire Line
+	9150 3150 9150 2950
+Connection ~ 9150 2950
+Wire Wire Line
+	9150 2950 9150 2750
+Connection ~ 9150 2750
+Wire Wire Line
+	9150 2750 9150 2550
+$Comp
+L Graphic:SYM_Radio_Waves_Small #SYM1
+U 1 1 5A67F5D4
+P 10400 6200
+F 0 "#SYM1" H 10400 6340 50  0001 C CNN
+F 1 "SYM_Radio_Waves_Small" H 10400 6075 50  0001 C CNN
+F 2 "wemos:letunas" H 10400 6025 50  0001 C CNN
+F 3 "~" H 10430 6000 50  0001 C CNN
+F 4 "?" H 10400 6200 50  0001 C CNN "PartNo"
+F 5 "?" H 10400 6200 50  0001 C CNN "Manufacturer"
+F 6 "?" H 10400 6200 50  0001 C CNN "Distributor"
+	1    10400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5A67FBCC
+P 9450 6200
+F 0 "MK1" H 9550 6246 50  0000 L CNN
+F 1 "Mounting_Hole" H 9550 6155 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 9450 6200 50  0001 C CNN
+F 3 "" H 9450 6200 50  0001 C CNN
+F 4 "?" H 9450 6200 50  0001 C CNN "PartNo"
+F 5 "?" H 9450 6200 50  0001 C CNN "Manufacturer"
+F 6 "?" H 9450 6200 50  0001 C CNN "Distributor"
+	1    9450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R10
+U 1 1 5A563B31
+P 6600 3900
+F 0 "R10" V 6500 3900 50  0000 C CNN
+F 1 "1k" V 6600 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6530 3900 50  0001 C CNN
+F 3 "" H 6600 3900 50  0001 C CNN
+F 4 "?" H 6600 3900 50  0001 C CNN "PartNo"
+F 5 "?" H 6600 3900 50  0001 C CNN "Manufacturer"
+F 6 "?" H 6600 3900 50  0001 C CNN "Distributor"
+	1    6600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3750 6600 3650
+Wire Wire Line
+	6600 4050 6600 4250
+Wire Wire Line
+	6600 3650 6250 3650
+Wire Wire Line
+	6250 3650 6250 3150
+Wire Wire Line
+	6250 3150 5450 3150
+Connection ~ 6600 3650
+$EndSCHEMATC

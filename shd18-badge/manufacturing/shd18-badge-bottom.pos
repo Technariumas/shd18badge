@@ -1,0 +1,19 @@
+### Module positions - created on Wed Jan 10 19:09:41 2018 ###
+### Printed by Pcbnew version kicad no-vcs-found-bf44d39~61~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                             PosX       PosY       Rot  Side
+C1        1u        C_0603                          288.0000  -168.9000   90.0000  bottom
+C2        1u        C_0603                          305.6596  -171.7985  270.0000  bottom
+R1        R         R_0603                          288.0000  -224.6000  180.0000  bottom
+R2        1k        R_0603                          306.4000  -180.0000   90.0000  bottom
+R3        1k        R_0603                          304.8596  -179.9985   90.0000  bottom
+R4        1k        R_0603                          303.3596  -179.9985   90.0000  bottom
+R5        1k        R_0603                          301.8596  -179.9985   90.0000  bottom
+R6        1k        R_0603                          300.3596  -179.9985   90.0000  bottom
+R7        1k        R_0603                          298.8596  -179.9985   90.0000  bottom
+R8        1k        R_0603                          297.3596  -179.9985   90.0000  bottom
+R9        1k        R_0603                          295.8596  -179.9985   90.0000  bottom
+R10       1k        R_0603                          305.0000  -168.5000   90.0000  bottom
+U2        74HC595   SOIC-16_3.9x9.9mm_Pitch1.27mm   299.6796  -173.7994   90.0000  bottom
+## End

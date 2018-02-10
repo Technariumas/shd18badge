@@ -1,0 +1,16 @@
+### Module positions - created on Wed Jan 10 19:09:41 2018 ###
+### Printed by Pcbnew version kicad no-vcs-found-bf44d39~61~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val         Package                 PosX       PosY       Rot  Side
+D1        LED         LED_0603            265.3000  -181.7000   45.0000  top
+D2        LED         LED_0603            264.7000  -193.6000   45.0000  top
+D3        LED         LED_0603            265.8000  -205.4000   45.0000  top
+D4        LED         LED_0603            269.7000  -222.0000   45.0000  top
+D5        LED         LED_0603            305.4000  -221.9000  135.0000  top
+D6        LED         LED_0603            309.7000  -205.3000  135.0000  top
+D7        LED         LED_0603            310.8000  -193.5000  135.0000  top
+D8        LED         LED_0603            310.1000  -181.6000  135.0000  top
+LED1      WS2812B     LED_WS2812B-PLCC4   288.0000  -171.3000    0.0000  top
+TH1       Thermistor  R_0603              288.0000  -226.1000    0.0000  top
+## End
