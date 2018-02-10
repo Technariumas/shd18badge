@@ -1,4 +1,4 @@
-# Science Hack Day 2018
+# Science Hack Day Vilnius 2018 - badge
 
 Participant badge for Science Hack Day Vilnius 2018
 
@@ -25,4 +25,7 @@ cd shd18badge/micropython
 
 Edit the flash_microcontroller.sh file so that it points to the correct USB port. If esptool.py is needed, install it (for example, pip install esptool.py). Then copy the Python files to the microcontroller:
 
-python transfer_files.py -p <USB device> util.py main.py thermistor.py boot.py
+python transfer_files.py -p /dev/ttyUSB5 -b 115200 util.py main.py thermistor.py boot.py
+ 
+## Tutorial
+A pretty great [tutorial is available here](http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/index.html)
