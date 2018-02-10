@@ -27,3 +27,5 @@ Edit the flash_microcontroller.sh file so that it points to the correct USB port
 
 python transfer_files.py -p /dev/ttyUSB5 -b 115200 util.py main.py thermistor.py boot.py
  
+## Tutorial
+A pretty great [tutorial is available here](http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/index.html)
