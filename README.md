@@ -1,4 +1,4 @@
-# Science Hack Day 2018
+# Science Hack Day Vilnius 2018 - badge
 
 Participant badge for Science Hack Day Vilnius 2018
 
