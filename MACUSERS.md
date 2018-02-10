@@ -1,4 +1,4 @@
-## Experiences of a mac user getting the Tardigrade set up
+## Experiences of a mac user getting the Tardigrade set up
 
 1. Install drivers as per [the README](README.md). 
 2. Open a terminal, plug the tardigrade in to your computer, and run `sudo dmesg` in the terminal. 
